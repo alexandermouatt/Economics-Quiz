@@ -74,14 +74,14 @@ const questions = [
     scores: [-2, -1, 0, 1, 2]
   },
   { 
-    question: "Ego strength: How self-centered are you?", 
-    answers: ["Moderately", "Very", "Extremely"], 
+    question: "Bonus Question: What do you prefer?", 
+    answers: ["An amazing Drink", "A brilliant drink", "A great drink"], 
     scale: 6, 
     scores: [1, 2, 3]
   },
   { 
-    question: "Ego strength: How assertive are you?", 
-    answers: ["Moderately", "Very", "Extremely"], 
+    question: "Bonus Question: Which is worst?", 
+    answers: ["Horrible cheese", "Terrible cheese", "rank cheese"], 
     scale: 6, 
     scores: [1, 2, 3]
   }
