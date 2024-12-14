@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,47 +12,54 @@ body {
 .quiz-container {
   background: white;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
 }
 
 h1 {
   color: #333;
+  margin-bottom: 20px;
 }
 
 #progress-container {
   width: 100%;
   background: #ddd;
-  height: 10px;
+  height: 12px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
 #progress-bar {
   width: 0;
   height: 100%;
-  background: #007bff;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
   transition: width 0.3s;
 }
 
+#question-image {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
 #question {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
+  color: #555;
 }
 
 form label {
   display: block;
   margin: 10px 0;
+  cursor: pointer;
+  color: #444;
 }
 
-#answers label {
-  display: block;
-  margin: 10px 0;
-  cursor: pointer;
+#answers label:hover {
+  color: #007bff;
 }
 
 #submit-btn {
@@ -62,6 +69,7 @@ form label {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 #submit-btn:hover {
@@ -70,11 +78,52 @@ form label {
 
 #result {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 #score {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 16px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ff6a00, #007bff);
+  outline: none;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  background: #0056b3;
+}
+
+canvas {
+  margin: 30px auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* Radar chart custom annotations */
+.chart-annotations {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-top: -10px;
 }
