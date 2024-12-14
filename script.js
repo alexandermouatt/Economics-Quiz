@@ -177,6 +177,9 @@ function endQuiz() {
       }]
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      aspectRatio: 1, // Controls the aspect ratio, 1 = square
       plugins: {
         tooltip: {
           callbacks: {
@@ -208,7 +211,7 @@ function endQuiz() {
         }
       }
     }
-  });
+  });  
 }
 
 formElement.addEventListener("submit", function (event) {

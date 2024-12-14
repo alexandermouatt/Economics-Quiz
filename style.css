@@ -119,11 +119,15 @@ canvas {
   max-width: 100%;
 }
 
-/* Radar chart custom annotations */
-.chart-annotations {
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  margin-top: -10px;
+#resultsChart {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 0 auto; /* Center the chart */
 }
+
+.chart-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
